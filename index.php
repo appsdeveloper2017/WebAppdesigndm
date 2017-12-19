@@ -35,8 +35,8 @@ and open the template in the editor.
                 <article>
                     <header>
                         <hgroup>
-                            <h1>Título uno</h1>
-                            <h2 class="texto1">Subtítulo uno</h2>
+                            <h1 id="titulo">Título uno</h1>
+                            <h2>Subtítulo uno</h2>
                         </hgroup>
                         <time datetime="2011-12-10" pubdate>publicado 10-12-2011</time>
                     </header>
