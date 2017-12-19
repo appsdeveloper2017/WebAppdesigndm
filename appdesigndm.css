@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font: bold 20px Verdana, sans-serif;
+}
+p {
+    font-size: 20px;
+    background: blue;
+}
+
+#texto1 {
+    font-size: 40px;
+    background: green;
+}
+
+.texto1 {
+    font-size: 10px;
+    background: red;
+}
+
+li:nth-child(odd) {
+    background: aquamarine;
+}
+
+li:nth-child(even) {
+    background: aqua;
+}
