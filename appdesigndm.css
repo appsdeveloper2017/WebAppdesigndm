@@ -5,6 +5,7 @@
 
 body {
     text-align: center;
+    background: black;
 }
 
 h1 {
@@ -15,14 +16,16 @@ p {
     background: blue;
 }
 
-#cabecera{
+#agrupar {
     display: block;
-    width: 500px;
-    margin: 50px auto;
+    width: 1000px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
     padding: 15px;
     text-align: center;
     border: 1px solid #999999;
-    background: #DDDDDD;
+    background: rgba(255, 255, 255, 0.8);
 
     border-radius: 20px;
     -moz-border-radius: 20px;
@@ -31,12 +34,6 @@ p {
     box-shadow: rgb(150, 150, 150) 5px 5px 10px;
     -moz-box-shadow: rgb(150, 150, 150) 5px 5px 10px;
     -webkit-box-shadow: rgb(150, 150, 150) 5px 5px 10px;
-
-    background: -webkit-linear-gradient(left, #FFFFFF, #006699);
-    background: -moz-linear-gradient(30deg, #FFFFFF, #006699);
-
-    /*outline: 2px dashed #006699;*/
-    /*outline-offset: 15px;*/
 }
 
 #titulo {
@@ -49,17 +46,7 @@ p {
     src: url("christmas.ttf");
 }
 
-
-
 .texto1 {
     font-size: 10px;
     background: red;
-}
-
-li:nth-child(odd) {
-    background: aquamarine;
-}
-
-li:nth-child(even) {
-    background: aqua;
 }
