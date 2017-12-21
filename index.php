@@ -17,6 +17,7 @@ and open the template in the editor.
                                         web, webs, aplicaciones moviles, movil"/>
         <title>Desarrollo movil & web</title>
         <link rel="stylesheet" href="appdesigndm.css">
+        <script src="appdesigndm.js"></script>
     </head>
     <body>
         <div id="agrupar">
