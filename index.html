@@ -5,7 +5,7 @@
 <html>
 
 <head>
-	<meta http-equiv="refresh" content="2" />
+	<meta http-equiv="refresh" content="10" />
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width", user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0>
 	<!--Enlance a archivo css-->
@@ -15,15 +15,23 @@
 
 	<style>
 		.slider{
-			background: url("img/fondo.png");
+
 			height: 100vh;
-			background-color: #5bc0de;
+			background-color: white;
 			background-size: cover;
 			background-position: center;
 		}
 		.colorletra{
-			color: #e566f1;
+			color: #83828c;
 		}
+		.colorletra1{
+			color: black;
+		}
+		.fondo:hover{
+			transform: scale(1.7);
+			-webkit-transition: all 1500ms;
+		}
+
 	</style>
 
 </head>
@@ -32,16 +40,21 @@
 <body >
 
 <section class="container-fluid slider d-flex justify-content-center align-items-center">
-	<h1 class="display-1 colorletra">AppDesigndm</h1>
+	<section class="container d-flex justify-content-center align-items-center fondo">
+	<ul>
+		<h1 class="display-1 colorletra">AppDesigndm</h1>
+	<p class="colorletra1 w-50 float-xl-right text-xl-right">Desarrollo web, iOS y android </p>
+	</ul>
+</section>
 </section>
 
-<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-sm sticky-top">
+<nav class=" container-fluid navbar navbar-inverse bg-inverse navbar-toggleable-sm sticky-top">
 	<button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
 			aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
 	</button>
 
 	<div class="collapse navbar-collapse" id="navbarTogglerDemo01"
-	<div class="navbar-nav ml-auto">
+	<div class="navbar-nav mr-auto">
 		<a class="nav-item nav-link active" href="index.html">Sobre mi</a>
 		<a class="nav-item nav-link disabled" href="index.html">Proyectos</a>
 		<a class="nav-item nav-link disabled" href="index.html">Curriculum</a>
