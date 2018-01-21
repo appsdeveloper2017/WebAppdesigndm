@@ -5,7 +5,6 @@
 <html>
 
 <head>
-	<meta http-equiv="refresh" content="10" />
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width", user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0>
 	<!--Enlance a archivo css-->
@@ -67,6 +66,12 @@
 		footer{
 			padding-top: 20px;
 		}
+		body{
+			height: 100vh;
+		}
+		.color{
+			background: #5cb3fd;
+		}
 
 	</style>
 
@@ -90,9 +95,8 @@
 	<div class="navbar-nav mr-auto ml-auto text-center">
 		<a class="nav-item nav-link" href="index.html">Sobre mi</a>
 		<a class="nav-item nav-link" href="proyectos.html">Proyectos</a>
-		<a class="nav-item nav-link" href="proyectos.html">Presupuesto</a>
+		<a class="nav-item nav-link" href="presupuestos.html">Presupuesto</a>
 		<a class="nav-item nav-link active" href="contacto.html">Contacto</a>
-
 	</div>
 		<div class="d-flex justify-content-center">
 			<a href="#" class="btn btn-outline-primary">Twitter</a>
@@ -102,9 +106,10 @@
 </nav>
 
 <!--Body de la página web con contenido-->
-<div class="container">
+
+<div class="container mt-5">
 	<section class="container-fluid d-flex justify-content-center align-items-center">
-			<form action="enviar.php" method="post">
+			<form class="mt-5" action="enviar.php" method="post">
 				<h2>CONTACTO</h2>
 				<input type="text" name="nombre" placeholder="Nombre" required>
 				<input type="text" name="apellidos" placeholder="Apellidos" required>
@@ -115,12 +120,11 @@
 				<input type="submit" value="ENVIAR" id="boton">
 			</form>
 	</section>
-	<div class="container"
-	<hr>
+	<hr class="mt-5">
 	<footer>
 		<p class="text-center">&copy; Company 2018 Desarrollo web y aplicaciones Barcelona</p>
 	</footer>
-</div>
+
 </div>
 
 
