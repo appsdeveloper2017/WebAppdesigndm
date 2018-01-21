@@ -14,10 +14,6 @@
 	<title>Programación de apps & web</title>
 
 	<style>
-		.slider{
-
-			height:100vh;
-		}
 		form {
 			width: 650px;
 			margin: auto;
@@ -106,20 +102,27 @@
 </nav>
 
 <!--Body de la página web con contenido-->
-<section class="container-fluid d-flex slider justify-content-center align-items-center">
-	<section class="container row">
-		<form action="enviar.php" method="post">
-		<h2>CONTACTO</h2>
-		<input type="text" name="nombre" placeholder="Nombre" required>
-		<input type="text" name="apellidos" placeholder="Apellidos" required>
-		<input type="text" name="correo" placeholder="Correo" required>
-		<input type="text" name="telefono" placeholder="Teléfono" required>
-		<input type="text" name="asunto" placeholder="Tema de consulta" required>
-		<textarea name="mensaje" placeholder="Escribe aquí tu consulta" required></textarea>
-		<input type="submit" value="ENVIAR" id="boton">
-		</form>
+<div class="container">
+	<section class="container-fluid d-flex justify-content-center align-items-center">
+			<form action="enviar.php" method="post">
+				<h2>CONTACTO</h2>
+				<input type="text" name="nombre" placeholder="Nombre" required>
+				<input type="text" name="apellidos" placeholder="Apellidos" required>
+				<input type="text" name="correo" placeholder="Correo" required>
+				<input type="text" name="telefono" placeholder="Teléfono" required>
+				<input type="text" name="asunto" placeholder="Tema de consulta" required>
+				<textarea name="mensaje" placeholder="Escribe aquí tu consulta" required></textarea>
+				<input type="submit" value="ENVIAR" id="boton">
+			</form>
 	</section>
-</section>
+	<div class="container"
+	<hr>
+	<footer>
+		<p class="text-center">&copy; Company 2018 Desarrollo web y aplicaciones Barcelona</p>
+	</footer>
+</div>
+</div>
+
 
 
 <!--Link a los archivos necesarios de javascript jquery y bootstrap.-->

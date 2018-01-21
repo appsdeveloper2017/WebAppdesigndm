@@ -5,7 +5,6 @@
 <html>
 
 <head>
-	<meta http-equiv="refresh" content="10" />
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width", user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0>
 	<!--Enlance a archivo css-->
@@ -14,45 +13,54 @@
 	<title>Programación de apps & web</title>
 
 	<style>
-		.slider{
-			height:100vh;
-			background-color: white;
-		}
-		.colorletra{
-			color: #83828c;
-		}
-		.colorletra1{
-			color: black;
-			font-family: "Brush Script MT";
-		}
-		.fondo:hover{
-			transform: scale(1.7);
-			-webkit-transition: all 1500ms;
-		}
 		.fondocolor{
-			background-color: white;
+			background-color: greenyellow;
 		}
 		.color{
 			background-color: cornflowerblue;
 		}
 		.letratitulo{
-			font-size: 2.7em;
+			font-size: 2em;
+		}
+		.letrasubtitulo{
+			font-size: 1em;
+		}
+		@media (min-width: 360px) {
+			.letratitulo {
+				font-size: 2.5em;
+			}
+			.letrasubtitulo{
+				font-size: 0.3em;
+			}
 		}
 		@media (min-width: 768px) {
 			.letratitulo {
 				font-size: 5em;
 			}
+			.letrasubtitulo{
+				font-size: 1em;
+			}
 		}
 		@media (min-width: 992px) {
 			.letratitulo {
-				font-size: 8em;
+				font-size: 6em;
+			}
+			.letrasubtitulo{
+				 font-size: 1em;
 			}
 		}
 		@media (min-width: 1200px) {
 			.letratitulo {
-				font-size: 10em;
+				font-size: 8em;
+			}
+			.letrasubtitulo{
+				font-size: 1em;
 			}
 		}
+		.letrasubtitulo{
+			font-size: 1em;
+		}
+
 
 	</style>
 
@@ -60,18 +68,6 @@
 
 
 <body >
-
-<!--Página inicial de la web-->
-
-<section class="container-fluid slider d-flex justify-content-center align-items-center">
-	<section class="container d-flex fondocolor justify-content-center">
-	<ul>
-	<h1 class="letratitulo colorletra">AppDesigndm</h1>
-		<hr>
-		<p class="float-right colorletra1">Desarrollo web y aplicaciones</p>
-	</ul>
-	</section>
-</section>
 
 <!--Barra de navegación-->
 
@@ -82,15 +78,14 @@
 <a class="navbar-brand" href="index.html">AppDesigndm</a>
 	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
+		<div class="navbar-nav mr-auto ml-auto text-center">
 
+			<a class="nav-item nav-link active" href="index.html">Sobre mi</a>
+			<a class="nav-item nav-link disabled" href="proyectos.html">Proyectos</a>
+			<a class="nav-item nav-link disabled" href="presupuestos.html">Presupuesto</a>
+			<a class="nav-item nav-link disabled" href="contacto.html">Contacto</a>
+		</div>
 
-	<div class="navbar-nav mr-auto ml-auto text-center">
-		<a class="nav-item nav-link active" href="index.html">Sobre mi</a>
-		<a class="nav-item nav-link disabled" href="proyectos.html">Proyectos</a>
-		<a class="nav-item nav-link disabled" href="presupuesto.html">Presupuesto</a>
-		<a class="nav-item nav-link disabled" href="contacto.html">Contacto</a>
-
-	</div>
 		<div class="d-flex justify-content-center">
 			<a href="#" class="btn btn-outline-primary">Twitter</a>
 		</div>
@@ -99,30 +94,63 @@
 </nav>
 
 <!--Body de la página web con contenido-->
+<div class="jumbotron align-baseline">
+	<div class="container">
+		<h1 class="display-1 text-center">appdesigndm.com</h1>
+		<p class="text-center">Desarrollo web y aplicaciones móviles.</p>
+		<p class="row justify-content-center">
+			<a class="btn btn-outline-primary btn-lg" href="#" role="button">Ver más...</a>
+		</p>
+	</div>
+</div>
 
-<section class="container">
-	<p class="mt-5 text-center text-uppercase font-italic font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicimg elit. Aut, vero.</p>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p class="bg-primary text-white p-4 text-justify w-25 float-left mr-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+<!-- Columnas -->
 
-</section>
+<div class="container">
 
-<!--Footer de la página web-->
 
-<footer></footer>
+	<div class="row">
+		<div class="col-md-4">
+			<h2>Empresas</h2>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+		</div>
+		<div class="col-md-4">
+			<h2>Particulares</h2>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+		</div>
+		<div class="col-md-4">
+			<h2>Colaboraciones</h2>
+			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+		</div>
+	</div>
 
-<!--Link a los archivos necesarios de javascript jquery y bootstrap.-->
+	<hr>
+
+
+	<section class="container">
+		<p class="mt-5 text-center text-uppercase font-italic font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicimg elit. Aut, vero.</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p class="bg-primary text-white p-4 text-justify w-50 float-left mr-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	</section>
+
+	<hr>
+
+	<!--Footer de la página web-->
+
+	<footer>
+		<p class="text-center">&copy; Company 2018 Desarrollo web y aplicaciones Barcelona</p>
+	</footer>
+</div> <!-- /container -->
+
+	<!--Link a los archivos necesarios de javascript jquery y bootstrap.-->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/tether.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
