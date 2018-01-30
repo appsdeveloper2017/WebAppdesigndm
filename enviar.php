@@ -1,5 +1,7 @@
 ﻿<?php
 
+
+
    $recaptcha = $_POST['g-recaptcha-response'];
    if ($recaptcha!=''){
 
@@ -19,18 +21,14 @@
             $mensaje = $_POST["mensaje"];
             $contenido = "Nomb: " . $nombre . "\nCognoms: " . $apellidos . "\nCorreu: " . $correo . "\nTeléfon: " . $telefono . "\nTema: " . $asunto . "\nMissatge: " . $mensaje;
             mail($destino,"Mensaje de appdesigndm", $contenido);
-            header("location:index.html");
+            echo '<script language="javascript">alert("Mensaje enviado con éxito!");</script>';
+
 
         }else{
-            "¿Eres un robot?";
+            echo '<script language="javascript">alert("Acceso restringido a los robots.");</script>';
         }
 
    }else{
-
-        echo "Valide el captcha...";
-
+       header("location:index.html");
    }
-
-
-
-?>
+   ?>
