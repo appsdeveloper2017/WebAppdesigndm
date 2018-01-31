@@ -21,7 +21,7 @@
             $mensaje = $_POST["mensaje"];
             $contenido = "Nomb: " . $nombre . "\nCognoms: " . $apellidos . "\nCorreu: " . $correo . "\nTeléfon: " . $telefono . "\nTema: " . $asunto . "\nMissatge: " . $mensaje;
             mail($destino,"Mensaje de appdesigndm", $contenido);
-            echo '<script language="javascript">alert("Mensaje enviado con éxito!");</script>';
+            header("location:passcaptcha.html");
 
 
         }else{
